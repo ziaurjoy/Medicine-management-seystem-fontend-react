@@ -52,6 +52,7 @@ const _nav = [
     ],
   },
 
+
   {
     component: CNavTitle,
     name: 'Extras',

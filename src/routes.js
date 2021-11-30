@@ -6,6 +6,9 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const CompanyList = React.lazy(() => import('./views/companys/list/CompanyList'))
 const CompanyDetails = React.lazy(() => import('./views/companys/details/CompanysDetails'))
 const CompanyCreate = React.lazy(() => import('./views/companys/create/CompanyCreate'))
+const Profile = React.lazy(() => import('./views/profile/profileview/Profile'))
+const EditProfile = React.lazy(() => import('./views/profile/editprofile/EditProfile'))
+
 
 // Medicine
 const MedicineList = React.lazy(() => import('./views/medicine/list/MedicineList'))
@@ -24,6 +27,12 @@ const routes = [
   { path: '/medicines/list', name: 'List', component: MedicineList },
   { path: '/medicines/medicines-create', name: 'Add New Medicine', component: MedicineCreate },
   { path: '/medicines/medicines-details', name: 'Medicine Details', component: MedicineDetails },
+
+  { path: '/profile', name: 'Profile', component: Profile, exact:true },
+  { path: '/profile/profileview', name: 'View Profile', component: Profile },
+  { path: '/profile/editprofile', name: 'Profile Edit', component: EditProfile },
+
+
 ]
 
 export default routes
